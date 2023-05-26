@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<meta
+			name="google-site-verification"
+			content="8WJIQSHNpylUjfXAZJIBtRCBSz1T1O7_4snhN5SMO5U"
+		/>
+		<meta
+			name="description"
+			content="Online Keyboard Key Tester And Type Learing Tool will help the user to identify the key which is pressing currently as well as typing learner must be assisted when they type with instant preview"
+		/>
+		<meta
+			name="keywords"
+			content="online keyboard tester,online keyboard test,keyboard tester,typing tester,typing test,bangla typing test,typing speed test,typing speed,typing,key tester"
+		/>
+		<meta name="msvalidate.01" content="136D445A6CED1A7A51A7800C9F7D1B49" />
+		<meta name="author" content="Md Alim Khan" />
+		<script src="https://www.googleoptimize.com/optimize.js?id=OPT-NWPSR88"></script>
+		<title>Keyboard Tester</title>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-RLEPMYHQGB"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-RLEPMYHQGB");
+		</script>
+		<link rel="icon" href="images/favicon.jpg" />
+	</head>
+	<body>
+		<div class="preview container mt-4">
+			<textarea cols="10" rows="5" class="preview-text"></textarea>
+			<button type="button" onclick="clearText()">Clear Text</button>
+		</div>
+		<!-- Keyboard layout -->
+		<div class="keyboard">
+			<div class="layout">
+				<div class="layout-left">
+					<div class="top-row">
+						<div class="group t-group1">
+							<span class="key key-27">esc</span>
+						</div>
+						<div class="group t-group2">
+							<span class="key key-112">f1</span>
+							<span class="key key-113">f2</span>
+							<span class="key key-114">f3</span>
+							<span class="key key-115">f4</span>
+						</div>
+						<div class="group t-group3">
+							<span class="key key-116">f5</span>
+							<span class="key key-117">f6</span>
+							<span class="key key-118">f7</span>
+							<span class="key key-119">f8</span>
+						</div>
+						<div class="group t-group4">
+							<span class="key key-120">f9</span>
+							<span class="key key-121">f10</span>
+							<span class="key key-122">f11</span>
+							<span class="key key-123">f12</span>
+						</div>
+					</div>
+					<div class="bottom-row">
+						<div class="group b-group1">
+							<span class="key key-192">
+								`
+								<br />
+								~
+							</span>
+							<span class="key key-49">
+								! <br />
+								1
+							</span>
+							<span class="key key-50">
+								@ <br />
+								2
+							</span>
+							<span class="key key-51">
+								# <br />
+								3</span
+							>
+							<span class="key key-52">
+								$ <br />
+								4</span
+							>
+							<span class="key key-53">
+								% <br />
+								5</span
+							>
+							<span class="key key-54">
+								^ <br />
+								6</span
+							>
+							<span class="key key-55">
+								* <br />
+								7</span
+							>
+							<span class="key key-56">
+								& <br />
+								8</span
+							>
+							<span class="key key-57">
+								( <br />
+								9</span
+							>
+							<span class="key key-48">
+								) <br />
+								0</span
+							>
+							<span class="key key-173">
+								- <br />
+								_
+							</span>
+							<span class="key key-61">
+								= <br />
+								+
+							</span>
+							<span class="key w-10 key-8">
+								<i class="fa-solid fa-arrow-left"></i>
+								<br />
+								backspace
+							</span>
+						</div>
+						<div class="group b-group2">
+							<div class="en-gr">
+								<div class="en-first">
+									<span class="key key-9"
+										>tab <br />
+										<i class="fa-solid fa-arrow-right-long-to-line"></i
+									></span>
+									<span class="key key-81">q</span>
+									<span class="key key-87">w</span>
+									<span class="key key-69">e</span>
+									<span class="key key-82">r</span>
+									<span class="key key-84">t</span>
+									<span class="key key-89">y</span>
+									<span class="key key-85">u</span>
+									<span class="key key-73">i</span>
+									<span class="key key-79">o</span>
+									<span class="key key-80">p</span>
+									<span class="key key-219"
+										>{ <br />
+										[</span
+									>
+									<span class="key key-221"
+										>} <br />
+										]
+									</span>
+								</div>
+								<div class="en-last">
+									<span class="key key-20">caps lock</span>
+									<span class="key key-65">a</span>
+									<span class="key key-83">s</span>
+									<span class="key key-68">d</span>
+									<span class="key key-70">f</span>
+									<span class="key key-71">g</span>
+									<span class="key key-72">h</span>
+									<span class="key key-74">j</span>
+									<span class="key key-75">k</span>
+									<span class="key key-76">l</span>
+									<span class="key key-59"
+										>: <br />
+										;
+									</span>
+									<span class="key key-222"
+										>' <br />
+										"
+									</span>
+									<span class="key key-220"
+										>\ <br />
+										|
+									</span>
+								</div>
+							</div>
+							<div class="en-sp">
+								<span class="key enter key-13"
+									>enter <br />
+									<i class="fa-solid fa-turn-down-left"></i>
+								</span>
+							</div>
+						</div>
+						<div class="group b-group3">
+							<span class="key w-10 key-16"
+								><i class="fa-solid fa-arrow-up"></i> &nbsp; shift</span
+							>
+							<span class="key key-90">z</span>
+							<span class="key key-88">x</span>
+							<span class="key key-67">c</span>
+							<span class="key key-86">v</span>
+							<span class="key key-66">b</span>
+							<span class="key key-78">n</span>
+							<span class="key key-77">m</span>
+							<span class="key key-188"
+								>, <br />
+								<
+							</span>
+							<span class="key key-190"
+								>. <br />
+								>
+							</span>
+							<span class="key key-191"
+								>/ <br />
+								?
+							</span>
+							<span class="key w-10 key-16"
+								><i class="fa-solid fa-arrow-up"></i>&nbsp; shift</span
+							>
+						</div>
+						<div class="group b-group4">
+							<span class="key key-17">ctrl</span>
+							<span class="key key-91"
+								><i class="fa-brands fa-windows"></i
+							></span>
+							<span class="key key-18">alt</span>
+							<span class="key w-50 key-32">space</span>
+							<span class="key key-18">alt</span>
+							<span class="key key-93"
+								><i class="fa fa-file" aria-hidden="true"></i
+							></span>
+							<span class="key key-17">ctrl</span>
+						</div>
+					</div>
+				</div>
+				<div class="layout-right">
+					<div class="rigth-group-top">
+						<div class="group r-t-group1">
+							<span class="key key-44"
+								>Print <br />
+								Screen
+							</span>
+							<span class="key key-145"
+								>Scoll <br />
+								Lock
+							</span>
+							<span class="key key-19"
+								>Pause <br />
+								Break
+							</span>
+							<div class="home-insert f-auto">
+								<div class="d-flex">
+									<span class="key key-45">insert</span>
+									<span class="key key-36">home</span>
+									<span class="key key-33"
+										>page <br />
+										up</span
+									>
+								</div>
+								<div class="d-flex">
+									<span class="key key-46">delete</span>
+									<span class="key key-35">end</span>
+									<span class="key key-34"
+										>page <br />
+										down</span
+									>
+								</div>
+							</div>
+							<div class="arrow f-auto">
+								<div class="d-flex">
+									<span class="key key-white"></span>
+									<span class="key key-38"
+										><i class="fa-solid fa-arrow-up"></i
+									></span>
+									<span class="key key-white"></span>
+								</div>
+								<div class="d-flex">
+									<span class="key key-37"
+										><i class="fa-solid fa-arrow-left"></i
+									></span>
+									<span class="key key-40"
+										><i class="fa-solid fa-arrow-down"></i
+									></span>
+									<span class="key key-39"
+										><i class="fa-solid fa-arrow-right"></i
+									></span>
+								</div>
+							</div>
+						</div>
+						<div class="group r-t-group2">
+							<div class="lighst d-flex w-100">
+								<div
+									style="
+										width: 50%;
+										margin: auto;
+										display: flex;
+										justify-content: space-between;
+									"
+								>
+									<span class="light numlock"></span>
+									<span class="light capsloack"></span>
+									<span class="light scorollock"></span>
+								</div>
+							</div>
+							<div class="numbers d-flex w-100 flex flex-column">
+								<div class="signs d-flex w-100">
+									<span class="key key-144">Num lock</span>
+									<span class="key key-111">/</span>
+									<span class="key key-106">*</span>
+									<span class="key key-109">-</span>
+								</div>
+								<div class="num-split w-100 d-flex">
+									<div class="d-flex w-80 flex-column">
+										<div class="num7to9 w-100 d-flex">
+											<span class="key key-103">7</span>
+											<span class="key key-104">8</span>
+											<span class="key key-105">9</span>
+										</div>
+										<div class="num7to9 w-100 d-flex">
+											<span class="key key-100">4</span>
+											<span class="key key-101">5</span>
+											<span class="key key-102">6</span>
+										</div>
+									</div>
+									<div class="w-20 d-flex">
+										<span class="key h-100 key-107" style="margin: 0">+</span>
+									</div>
+								</div>
+								<div class="num-split w-100 d-flex">
+									<div class="d-flex w-80 flex-column">
+										<div class="num7to9 w-100 d-flex">
+											<span class="key key-0">1 </span>
+											<span class="key key-98">2</span>
+											<span class="key key-99">3</span>
+										</div>
+										<div class="num7to9 w-100 d-flex">
+											<span class="key w-40 key-96">0</span>
+											<span class="key key-110">.</span>
+										</div>
+									</div>
+									<div class="w-20 d-flex">
+										<span class="key h-100 key-13" style="margin: 0"
+											>enter</span
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<ol class="mt-5">
+				<li>
+					To test numeric key make sure you tured on <code>CapsLock</code>
+				</li>
+				<li>
+					Tester cannot differentiate between duplicate keys
+					(<code>Shift</code>, <code>Ctrl</code>, <code>Alt</code>,
+					<code>Enter</code>). Be sure to test both of each.
+				</li>
+			</ol>
+		</div>
+		<!-- Scripts -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<script src="keyboard.js"></script>
+	</body>
+</html>
